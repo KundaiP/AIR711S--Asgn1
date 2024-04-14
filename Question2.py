@@ -81,7 +81,7 @@ def main():
     ]
 
     routes = []
-    for _ in range(3):  # Generate three routes
+    for _ in range(4):  # Generate three routes
         routes.append(hillClimbing(tsp))
 
     visualizeRoutes(tsp, routes)
