@@ -1,7 +1,7 @@
 import random
 
 # Define the city names
-cities = ['Khomasdal', 'Eros', 'Katutura', 'Dorado', 'Klein Windhoek']
+cities = ['Dorado Park', 'Khomasdal', 'Katutura','Eros','Klein Windhoek']
 
 
 def generateRandomRoute():
@@ -14,7 +14,7 @@ def routeLength(tsp, route):
         length += tsp[route[i - 1]][route[i]]
     return length
 
-
+#Calculates the total distance travelled 
 def totalDistance(tsp, route):
     distances = []
     total_length = 0
@@ -54,6 +54,7 @@ def hillClimbing(tsp):
 
 
 def visualizeRoutes(tsp, routes):
+    #text visualizer for the routes to display routes 
     print("City Map:")
     for city in cities:
         print(city, end=" ")
